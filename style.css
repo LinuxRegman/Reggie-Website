@@ -1,0 +1,48 @@
+body {
+    background-color: #c8ffae; 
+}
+
+.home-title {
+    width:10in; margin:auto; height:auto
+}
+
+.logo {
+width: 20%; float:left; width:250px;
+}
+
+.homepage-title {
+    width: 75%; float:right
+}
+
+.header {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2.6cm; line-height: 50px; font-weight: 700; padding: 0.2cm; text-align: left; padding-top: 3.5cm;
+    color:green; margin:2px
+}
+
+.headersub {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px; line-height: 15px; font-weight: 700; padding-bottom:2px; margin-top:0.40cm; margin-bottom: 0.5cm;
+    letter-spacing: 0.02cm; color:green; text-align: left;
+}
+
+.home-body {
+    text-align: center; float:inline-start; margin-left: 1.5in; margin-right: 1.5in;
+}
+
+.home-body p {
+    padding: 0.05cm; margin-top: 1px; font-family:Verdana, Geneva, Tahoma, sans-serif; letter-spacing: 1px;
+    line-height: 1.6; font-size: 14; color:green;
+}
+
+.navlinks {
+    text-align: center;
+}
+
+.navlinks a {
+    margin: 0.1cm;
+}
+
+*{
+    border: 2px red;
+}
