@@ -1,48 +1,134 @@
 body {
-    background-color: #c8ffae; 
+    background-color: #6D5676;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; margin: 0 auto;
 }
 
-.home-title {
-    width:10in; margin:auto; height:auto
+/**top navigation bar **/
+
+#navigation {
+    background-color: #68A0A1; color:white;
+    width: 90%; margin:1% auto; padding:1.5rem 1rem 1rem 1rem;
+    text-align: right;
+    font-size: 18px; letter-spacing: 1px;
+    border-radius:1rem;
 }
 
-.logo {
-width: 20%; float:left; width:250px;
+#navigation li {
+    display: inline; margin:1rem; 
 }
 
-.homepage-title {
-    width: 75%; float:right
+/** welcome header **/
+
+.welcome {
+    color: white; background-color: #7bb957;
+    margin:1.5%; padding: 0.5rem 0% 0% 0%;
+    text-align: left; letter-spacing: 1.4px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 20pt;
+    margin-bottom: 3rem; border-radius: 2rem;
 }
 
-.header {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 2.6cm; line-height: 50px; font-weight: 700; padding: 0.2cm; text-align: left; padding-top: 3.5cm;
-    color:green; margin:2px
+.welcome img {
+    height:75px; width:75px;
+    float:right; margin:1rem;
 }
 
-.headersub {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 20px; line-height: 15px; font-weight: 700; padding-bottom:2px; margin-top:0.40cm; margin-bottom: 0.5cm;
-    letter-spacing: 0.02cm; color:green; text-align: left;
+.welcomeheader {
+    padding: 0.1rem 2rem 0rem; margin-bottom: 1rem;
 }
 
-.home-body {
-    text-align: center; float:inline-start; margin-left: 1.5in; margin-right: 1.5in;
+.welcome p {
+    color:#312635; background-color: #ffd664; margin:0%; padding:1rem 1rem 2rem 1rem;
+    font-size: 14pt; border-radius: 2rem; border-top-left-radius: 1rem; border-top-right-radius: 1rem;
 }
 
-.home-body p {
-    padding: 0.05cm; margin-top: 1px; font-family:Verdana, Geneva, Tahoma, sans-serif; letter-spacing: 1px;
-    line-height: 1.6; font-size: 14; color:green;
+/** start of mid page and first row **/
+
+.rowspace {
+    padding:0 1% 3rem 1%; background-color:#EBF8DD; overflow: hidden;
 }
 
-.navlinks {
+.topic {
+    text-align: center; background-color: #EBF8DD; padding: 0.5rem 0 0.5rem 0; margin:0.5rem;
+    font-size: 14pt;
+}
+
+.overview, .care, .diet { /** first three sections **/
+    color:white; background-color: #68A0A1;
+    width: 29%; float: inline-start; margin: 1% 2% 1% 2%;
+    padding-bottom: 1.5rem;
     text-align: center;
+    font-size: 18pt;
+    border-radius: 2rem;
 }
 
-.navlinks a {
-    margin: 0.1cm;
+.toprow img {
+    width:75px; height: 75px;
 }
 
-*{
-    border: 2px red;
+/** start of second row **/
+
+.bottomrow {
+    overflow: hidden;
+    padding: 0 14% 0 14%;
+}
+
+.gallery, .art {
+    color: white; background-color: #68A0A1;
+    width: 45%; margin: 1.8%; display:inline-block;
+    /**padding-left: 0.55rem;**/ /** not sure if hack or not, check later for better solution **/
+    padding-bottom: 1.5rem;
+    text-align: center;
+    font-size:18pt;
+    border-radius: 2rem;
+}
+
+.art {
+    float:left
+}
+
+.gallery {
+    float:right
+}
+
+.bottomrow img {
+    width: 75px; height: 75px;
+}
+
+/** Quote from reggie section **/
+
+.quote {
+    background-color: #CBE2CE; color: #68A0A1;
+    text-align: right;
+    padding:2rem 2rem 2.5rem 2rem;
+}
+
+.quote p {
+    margin: 0.5rem 0 0 0;
+}
+
+.gap {
+    background-color: #EBF8DD; height: 2rem;
+}
+
+/** about us **/
+
+.aboutus {
+    background-color: #7bb957; color:white; width:30%; overflow:hidden; margin: 2rem 35% 2.5rem 35%; padding:1rem 1rem 1.5rem 1rem;
+    border-radius: 1rem; border:#ffd664 solid 2px;
+}
+
+.aboutus h2 {
+    font-size: 18pt; margin: 0rem 1rem 0rem 1rem;
+}
+
+.aboutus p {
+    margin: 0rem 1rem 1rem 1rem;
+}
+
+.aboutus a {
+    margin:1rem; background-color: #ffd664; color:#6D5676; text-decoration: none; padding:0.3rem; border:1px solid #6D5676; border-radius: 0.5rem;
+}
+
+.copyright {
+    text-align: right; color: white; font-size: 8pt;
 }
