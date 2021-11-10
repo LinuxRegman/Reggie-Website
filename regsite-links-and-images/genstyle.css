@@ -1,0 +1,94 @@
+body {
+    background-color: #6D5676;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; margin: 0 auto;
+}
+
+/**navigation bar **/
+
+.logo {
+    float: left; height: 0.75in; width:auto; margin-left: 3rem; margin-top: 0;
+}
+
+#navigation {
+    background-color: #68A0A1; color:white;
+    width: 90%; margin:1% auto; padding:1.5rem 1rem 1rem 1rem;
+    text-align: right;
+    font-size: 18px; letter-spacing: 1px;
+    border-radius:1rem;
+}
+
+#navigation a {
+    color:white;
+}
+
+#navigation li {
+    display: inline; margin:1rem; 
+}
+
+.currentpage { /** sets the page you are already on yellow **/
+    color:#ffd664;
+}
+
+/** page title **/
+
+.title {
+    background-color: #7bb957;
+    padding-bottom:0; 
+    margin:1rem 1rem 3rem 1rem;
+    border-radius: 2rem; 
+}
+
+.title h2 {
+    color: white;
+    font-size: 26pt;
+    margin-bottom: 0rem; padding: 2rem 2rem 1rem 2rem;
+    width:60%;
+}
+
+.title .sub {
+    background-color: #ffd664; color: #312635;
+    font-size: 14pt;
+    padding:0.5rem 1rem 2rem 1rem; margin:0%; 
+    border-radius: 2rem; border-top-left-radius: 1rem; border-top-left-radius: 1rem;
+} 
+
+/**Body of page **/
+
+.topicimage {
+    float: right; Width:40%; height:auto; margin: 2rem 0rem 1rem 0rem;
+}
+
+.topicbody {
+    background-color: #EBF8DD; padding:0 3%; color:#312635; font-size:12pt; line-height: 1.4; 
+    letter-spacing: 0.7px; padding-bottom: 2rem;
+    overflow:hidden
+}
+
+.topicbody h2 {
+    font-size: 16pt;
+    margin: 2rem 0 0.5rem 0;
+    border-bottom: seagreen solid 1px;
+}
+
+.topicbody p {
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+.topicbody .topictitlehalf {
+    width:60%; text-align: left;
+}
+
+.pagequote {
+    background-color: #CBE2CE; color: #68A0A1;
+    text-align: right;
+    padding:2rem 2rem 2.5rem 2rem;
+    margin-top:0;
+}
+
+.pagequote p {
+    margin: 0.5rem 0 0 0;
+}
+
+* {
+    border:greenyellow 1px;
+}
