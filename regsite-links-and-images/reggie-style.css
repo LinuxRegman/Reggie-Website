@@ -7,6 +7,11 @@ ul {
     list-style-type: none;
 }
 
+h1{ /** Formatting largest text size of mission statement **/
+    font-size: 36pt; line-height: 50px; 
+    margin-top:0.25rem; margin-bottom: 0.25rem; 
+}
+
 h2 { 
     font-weight: 300; font-size: 24pt;
 }
@@ -16,11 +21,7 @@ p {
     margin-bottom: 2rem;
 }
 
-.top-bg {
-    background-color: #6D5676; padding:  1rem 12.5% 1rem 12.5%;
-}
-
-.nav-bar {
+.nav-bar { /** Formats the navigation bar at the top of each page **/
     display:flex; justify-content: center; align-items: center;
     background-color: #68A0A1; color: white;
     padding:0.05rem 0.15rem 0.05rem 0.15rem;
@@ -34,6 +35,11 @@ p {
     flex:2; 
     text-align: center;
     padding:1rem; 
+}
+
+.nav-bar a {
+    flex:1;
+    text-decoration: none; color:white;
 }
 
 .logo {
@@ -105,33 +111,23 @@ p {
     justify-content: center; align-items: center;
 }
 
-.mid-img {
+.mid-image-subtitle p{ /** centers the subtitle below the displayed image in the mid-bg div **/
+    text-align:center;
+}
+
+.mid-img { /** Displays reggi eating wood image on diet page. Fix later **/
     flex:1 1 auto;
     object-fit: contain;
     max-width: 100%;
     text-align: center;
 }
 
-.mid-blurb {
+.mid-blurb { /** Displays the text alongside the mid page image **/
     flex: 1 4 auto;
     padding: 1rem;
 }
 
-/** food list **/
-
-.eaten-list{
-    background-color: #EBF8DD;
-    padding:0.5rem 15% 0.5rem 15%; margin:1rem 0rem 1rem 0rem;
-    text-align: center;
-}
-
-.eaten-list>h2{
-    margin-bottom: 0.25rem;
-}
-
-.eaten-list>p:nth-child(2) {
-    margin-top:0.25rem; margin-bottom: 0.5rem;
-}
+/** Color change in the mid page **/
 
 .object-list {
     display:flex; justify-content: space-between; align-items: center; gap:1rem;
@@ -142,17 +138,37 @@ p {
     flex:1 1 100%; padding-top: 8.75%; padding-bottom: 8.75%;
 }
 
-/** Generic informational segment code for reuse **/
+/** Generic segment code for reuse **/
+
+
+.generic-padding {
+    padding:  1rem 12.5% 1rem 12.5%; 
+}
+
+.generic-padding-larger {
+    padding:  1rem 6.25% 1rem 6.25%; 
+}
+
+.purple-bg {
+    background-color: #6D5676; 
+}
+
+.generic-quote {
+    background-color: #EBF8DD; color: #68A0A1;
+}
 
 .generic-info-box {
     margin:0 15% 0 15%;
+}
+
+.generic-underline {
+    border-bottom:black 2px solid;
 }
 
 .generic-info-box h2 {
     padding:0.75rem;
     margin:0.25rem;
     padding-bottom: 0.5rem;
-    border-bottom:black 2px solid;
 }
 
 .generic-info-box p {
@@ -173,6 +189,22 @@ p {
     background-color: #BAE5E5;
 }
 
+.mid-color-change{ /** Formats a color change for second section of body. Removes h2 underlines **/
+    background-color: #EBF8DD;
+    padding:0.5rem 15% 0.5rem 15%; margin:1rem 0rem 1rem 0rem;
+}
+
+.mid-color-change>h2{
+    margin-bottom: 0.25rem;
+}
+
+.generic-flex-contain { /** generic flex container class for quick use or testing **/
+    display:flex;
+}
+.generic-flex-item { /** generic flex item class for quick use or testing **/
+    flex:1
+}
+
 /** Page Quotes **/
 
 .pagequote {
@@ -190,19 +222,14 @@ p {
 /** Swimming Reggi **/
 
 .swimming-reggi {
-    display: flex; justify-content: center;
+    display: flex; justify-content: right;
     margin-top:12rem;
 }
 
-.swimming-reggi>div {
-    flex:1 0 auto;
-    width:45vw;
-}
-
-.swimming-reggi>img{
-    flex:1 7 auto;
+.swimming-reggi img {
+    flex:0 1 auto; margin-right: 1.5rem;
     object-fit: contain;
-    max-width: 100%;
+    max-width: 40vw;
 }
 
 .copyright {    
@@ -210,8 +237,79 @@ p {
     padding: 0.75rem; margin:0.25rem;
 }
 
-/** * {
-    border:blue solid 1px;
-} **/
+/** page specific code **/
+
+/** overview code **/
+
+.overview-reg { /** Displays reggi image on overview page **/
+    object-fit: contain;
+    width:45vw;
+}
+
+.tax {
+    flex: 7; margin:0 1rem 0 0.5rem;
+}
+
+.phi {
+    flex: 6; margin:0 0.5rem 0 1rem;
+}
+
+/** diet code **/
+
+.eaten-list{ /** Centers the text specifically for the consumed section on diet **/
+    text-align:center
+}
+
+.eaten-list>p:nth-child(2) { /** remove the gap between the text and list in consumed section of diet **/
+    margin-top:0.25rem; margin-bottom: 0.5rem;
+}
+
+/** about us code **/
+#about-us>h2:first-child {
+    text-align: center; color:white;
+}
+
+.about-us-bg {
+    background-image: url("Images/about-us-bg.jpg"); background-repeat: no-repeat; background-position-y: -1.3in;
+}
+
+.about-us-display{ /** flex container for mission statement and info **/
+    display: flex; align-items: flex-end; gap:1rem; color:white;
+}
+
+.about-us-display h2{ /** better line height for h2 elements **/
+    line-height: 32px;
+}
+
+.about-us-column {
+    display: flex; flex-direction: column;
+}
+
+.about-us-large-text { /** large text for about us opening **/
+    flex:0 5 auto;
+}
+
+.about-us-medium-text {
+    flex:0 5 auto;
+}
+
+.about-us-small-text {
+    flex:1 0 75%;
+    line-height: 28px;
+    font-size: 14pt;
+    font-weight: 300;
+}
+
+.about-us-quoteboxes {
+    display:flex; justify-content: space-evenly; gap:5rem; padding-top: 3rem; padding-bottom: 1rem;
+}
+
+.about-us-quoteboxes h2{
+    line-height: 32px; margin:0.5rem;
+}
+
+.about-us-quote-source {
+    text-align: right; font-size: 18pt;
+}
 
 img {max-width:100%;}
