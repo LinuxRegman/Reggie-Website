@@ -266,7 +266,7 @@ p {
 
 /** about us code **/
 #about-us>h2:first-child {
-    text-align: center; color:white;
+    text-align: center; color:white; margin-bottom:0;
 }
 
 .about-us-bg {

@@ -1,0 +1,55 @@
+body {
+    color: white; background-color: salmon;
+}
+
+.standard-margins {
+    margin-left: 8.5%; margin-right: 8.5%;
+}
+
+.expanded-margins {
+    margin-left: 4.25%; margin-right: 4.25%;
+}
+
+.lesson-style {
+    background-color:lightpink;
+    color:black;
+    margin-top: 0%;
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+.lesson-style>p:first-of-type {
+    margin-top: 0%;
+}
+
+.lesson-style h1 {
+    color: white; text-align: center; background-color: tomato;
+}
+
+.section-title {
+    padding: 1rem; padding-bottom: 0.5rem;
+    background-color: lightskyblue;
+    color:white;
+    text-align: center;
+    margin-bottom: 0%;
+}
+
+.section-title h1 {
+    background-color: skyblue;
+}
+
+.navbar{
+    display:flex; background-color: rgb(12, 107, 79); margin-left: 2.5%; margin-right: 2.5%; padding:0.25rem;
+    border-radius: 1rem;
+}
+
+.navbar>div {
+    flex:1 1 auto; 
+}
+
+.bar-3 {
+    flex:2 0 auto;
+}
+
+.navbar h1 {
+    background-color: lightseagreen; padding:0.5rem; margin: 0.15rem; border-radius: 1rem
+}
